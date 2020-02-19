@@ -7,11 +7,11 @@ float r = 0;
 float theta = 0;
 
 float amplitude = 0;
-float volume = 10;
+float volume = 5;
 
 void setup() {
-  senderInit("F10");
-  size(800, 800);
+  senderInit("G10 P0 L20 X0 Y0 Z0");  // Set origin to current position
+  size(450, 380);
   background(255);
 
   // Create an Input stream which is routed into the Amplitude analyzer
